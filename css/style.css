@@ -438,7 +438,7 @@ button {
 }
 
 .portfolio-item:hover .overlay,
-.portfolio-item:hover .focus {
+.portfolio-item:focus .overlay {
   transform: translateY(0%);
 }
 
