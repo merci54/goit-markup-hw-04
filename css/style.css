@@ -97,9 +97,7 @@ button {
   gap: 40px;
 }
 
-
 .nav-item-link {
-
   position: relative;
 
   font-weight: 500;
@@ -112,13 +110,13 @@ button {
 }
 
 .active::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: #404BBF;
+  background-color: #404bbf;
   left: 0;
   bottom: -4px;
 }
@@ -160,12 +158,14 @@ button {
   background-color: #2e2f42;
   padding: 188px 0;
 
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/herobg.png');
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/herobg.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
-
 }
 
 .hero-title {
@@ -244,9 +244,9 @@ button {
 
 .about-block {
   min-width: 264px;
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
   border-radius: 4px;
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   padding: 24px 0;
   margin-bottom: 8px;
 }
@@ -294,7 +294,8 @@ button {
 .team-item {
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-item-container {
@@ -323,6 +324,9 @@ button {
   fill: #ffffff;
 }
 
+.team-social-item {
+}
+
 .team-social-link {
   display: flex;
   justify-content: center;
@@ -330,9 +334,13 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-social-item:hover .team-social-link {
+  background-color: #404bbf;
+}
 
 .team-list li {
   background-color: #ffffff;
