@@ -422,7 +422,7 @@ button {
   overflow: hidden;
 }
 
-.overlay {
+.overlay-text {
   position: absolute;
   top: 0;
   font-size: 16px;
