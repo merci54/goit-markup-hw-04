@@ -100,6 +100,7 @@ button {
 }
 
 .nav-item-link {
+  display: block;
   position: relative;
 
   font-weight: 500;
@@ -167,16 +168,15 @@ button {
   background-color: #2e2f42;
   padding: 188px 0;
 
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/herobg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -468,7 +468,9 @@ button {
 
 .footer-logo {
   display: inline-block;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
+  padding: 0;
+
 }
 
 .footer-logo-text {
@@ -486,6 +488,7 @@ button {
 .footer-content {
   margin-right: 120px;
 }
+
 .footer-media-text {
   font-weight: 500;
   font-size: 16px;
